@@ -9,15 +9,18 @@
   </head>
 
   <body>
-    <h1>Move the mouse over the square</h1>
+    <form name="signup_form" autocomplete="on" novalidate>
+      <label>
+        Email
+        <input type="email" name="email" />
+      </label>
 
-    <div class="box">
-      <div class="overlay">
-        <p>
-          This content is hidden through transformation and only appears when
-          hovering over <code>div.box</code>
-        </p>
-      </div>
-    </div>
+      <label>
+        Password
+        <input type="password" name="password" />
+      </label>
+
+      <button type="submit">Submit</button>
+    </form>
   </body>
 </html>
