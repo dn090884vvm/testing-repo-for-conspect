@@ -230,4 +230,57 @@ ol {
   text-transform: uppercase;
   color: #487996;
 }
+
+.comment-wrapper {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.comment {
+  visibility: hidden;
+  top: 45px;
+  left: -65px;
+  width: 162px;
+  height: 83px;
+  background-color: rgba(229, 229, 229, 0.8);
+  position: absolute;
+  border-radius: 2px;
+}
+
+.comment-wrapper:hover .comment,
+.comment-wrapper:focus .comment {
+  visibility: visible;
+}
+
+.comment::after {
+  content: '';
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-right: 15px solid transparent;
+  border-bottom: 15px solid rgba(229, 229, 229, 0.8);
+  border-left: 15px solid transparent;
+}
+
+.float-phone__list {
+  padding: 16px 12px;
+}
+
+.float-phone__item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.float-phone__link {
+  font-family: Cera Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.01em;
+  color: #2b2b2b;
+}
 /*# sourceMappingURL=main.css.map */
