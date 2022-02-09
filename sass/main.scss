@@ -1,2 +1,10 @@
 //UTILS
+@import './base/common';
 @import './base/container';
+@import './utils/mixin';
+
+//COMPONENTS
+@import './conponents/figure';
+
+//LAYOUTS
+@import './layouts/header';

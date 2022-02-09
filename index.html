@@ -9,7 +9,85 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <div class="container header-container">
+        <div class="figure-under-desktop figure-under-desktop--mobile-left"></div>
+        <div class="figure-under-desktop figure-under-desktop--mobile-right"></div>
+        <nav>
+          <a href=""><img src="./images/logo.svg" alt="" /></a>
+        </nav>
+        <button class="burger-btn" data-menu-open>
+          <svg class="burger-btn__icon">
+            <use href="./images/symbol-defs.svg#burger-menu"></use>
+          </svg>
+        </button>
+        <button class="call-btn">
+          <svg class="call-btn__icon">
+            <use href="./images/symbol-defs.svg#icon-call"></use>
+          </svg>
+        </button>
+        <a href="" class="language link">ENG</a>
+      </div>
+
+      <div class="mobile-menu container" data-menu>
+        <div class="mobile-menu__container">
+          <div class="figure-under-desktop figure-under-desktop--mobile-left"></div>
+          <div class="figure-under-desktop figure-under-desktop--mobile-right"></div>
+          <div class="figure-under-desktop figure-under-desktop--mobile-menu"></div>
+          <a href=""><img src="./images/logo.svg" alt="" /></a>
+          <button class="close-btn mobile-menu__close-btn" data-menu-close>
+            <svg class="close-btn__icon">
+              <use href="./images/symbol-defs.svg#icon-close-window"></use>
+            </svg>
+          </button>
+          <button class="call-btn">
+            <svg class="call-btn__icon">
+              <use href="./images/symbol-defs.svg#icon-call"></use>
+            </svg>
+          </button>
+          <a href="" class="language link">ENG</a>
+        </div>
+        <!-- <h2 class="mobile-menu__header">ГОЛОВНА</h2> -->
+        <ul class="list mobile-menu__list">
+          <li class="mobile-menu__item"><a href="" class="mobile-menu__link link">ГОЛОВНА</a></li>
+          <li class="mobile-menu__item mobile-menu__item--service">
+            ПОСЛУГИ
+            <ul class="list mobile-menu__sub-list">
+              <li class="mobile-menu__sub-item">
+                <div class="mobile-menu__sub-wraper">
+                  <svg class="mobile-menu__sub-icon">
+                    <use href="./images/symbol-defs.svg#icon-bullet"></use>
+                  </svg>
+                </div>
+                <a href="" class="mobile-menu__sub-link link"> 3D Моделювання </a>
+              </li>
+              <li class="mobile-menu__sub-item">
+                <div class="mobile-menu__sub-wraper">
+                  <svg class="mobile-menu__sub-icon">
+                    <use href="./images/symbol-defs.svg#icon-bullet"></use>
+                  </svg>
+                </div>
+                <a href="" class="mobile-menu__sub-link link">3D Сканування</a>
+              </li>
+              <li class="mobile-menu__sub-item">
+                <div class="mobile-menu__sub-wraper">
+                  <svg class="mobile-menu__sub-icon">
+                    <use href="./images/symbol-defs.svg#icon-bullet"></use>
+                  </svg>
+                </div>
+                <a href="" class="mobile-menu__sub-link link">3D Друк</a>
+              </li>
+            </ul>
+          </li>
+          <li class="mobile-menu__item"><a href="" class="mobile-menu__link link">ЗАМОВИТИ</a></li>
+          <li class="mobile-menu__item"><a href="" class="mobile-menu__link link">КОНТАКТИ</a></li>
+        </ul>
+      </div>
+    </header>
+    <script src="./js/menu.js"></script>
+  </body>
 </html>
