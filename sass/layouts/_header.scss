@@ -1,4 +1,15 @@
 .header {
+  // position: relative;
+  // padding-top: 29px;
+  // padding-bottom: 32px;
+}
+.nav__list {
+  display: none;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   position: relative;
   padding-top: 29px;
   padding-bottom: 32px;
@@ -48,12 +59,6 @@
   @include font(700, 14px, 18px);
   letter-spacing: 0.01em;
   color: #bdbdbd;
-}
-
-.header-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 
 .mobile-menu {
@@ -236,4 +241,157 @@
   letter-spacing: 0.01em;
 
   color: #2b2b2b;
+}
+
+.phones-list {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    width: 768px;
+    //    width: 100vw;
+    // height: 100vh;
+  }
+  // .navigation {
+  //   margin-right: 165px;
+  // }
+  .burger-btn {
+    // margin-left: 165px;
+  }
+
+  .logo-img {
+    width: 135px;
+    height: 31px;
+  }
+  .logo {
+    margin-right: 130px;
+  }
+  .logo-menu {
+    margin-right: 165px;
+  }
+  .call-btn {
+    display: none;
+  }
+
+  .phones-list {
+    display: block;
+  }
+
+  .phones-list__link {
+    font-family: Cera Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.01em;
+
+    color: #2b2b2b;
+
+    &:hover,
+    &:focus {
+      color: #008cef;
+    }
+  }
+
+  .phones-list__icon {
+    width: 14px;
+    height: 14px;
+    fill: currentColor;
+  }
+  .logo {
+    // margin-right: 174px;
+    // width: 192px;
+    // height: 48px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .burger-btn {
+    display: none;
+  }
+  .header-container {
+    padding-bottom: 70px;
+  }
+
+  .logo-img {
+    width: 192px;
+    height: 48px;
+  }
+
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav__list {
+    display: flex;
+  }
+
+  .nav__link {
+    font-family: Caviar Dreams;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #2b2b2b;
+
+    &:hover,
+    &:focus {
+      color: #008cef;
+    }
+  }
+  .nav__item:not(:last-child) {
+    margin-right: 54px;
+  }
+  .logo {
+    margin-right: 213px;
+    // width: 192px;
+    // height: 48px;
+  }
+  .nav__item {
+    position: relative;
+  }
+  .nav__sub-list {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    left: -30px;
+    // margin-top: 8px;
+    padding-top: 8px;
+  }
+  .nav__sub-item {
+    background-color: #ffffff;
+    text-align: center;
+  }
+  .nav__sub-link {
+    white-space: nowrap;
+    font-family: Caviar Dreams;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+
+    letter-spacing: 0.01em;
+
+    color: #2b2b2b;
+
+    &:hover,
+    &:focus {
+      color: #008cef;
+    }
+  }
+
+  .nav__sub-link:not(:last-child) {
+    margin-bottom: 6px;
+  }
+
+  .nav__item:hover .nav__sub-list,
+  .nav__item:focus .nav__sub-list {
+    display: flex;
+  }
 }
